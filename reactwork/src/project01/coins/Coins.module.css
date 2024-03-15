@@ -1,0 +1,7 @@
+.coins {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    /* padding-bottom: 30px; */
+}
