@@ -1,0 +1,28 @@
+.CheckItem{
+    display: flex;
+
+}
+
+.Coinsimg{
+    width: 50px;
+}
+
+.Coinsimg img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Describe{
+    flex: auto;
+    margin-left: 20px;
+}
+
+.title{
+    font-size: 25px;
+}
+
+.priceouter{
+    display: flex;
+    justify-content:space-between;
+}
+

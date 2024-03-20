@@ -1,0 +1,39 @@
+.checkout {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: aquamarine;
+}
+
+.describe{
+    background-color: azure;
+    padding: 0 10px;
+}
+
+.header{
+    display: flex;
+    border-bottom: 5px solid #f2f2f2;
+    height: 50px;
+    align-items: center;
+}
+
+.footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.payPrice::before{
+    content: '合计￥';
+    font-size: 10px;
+}
+
+.coins{
+    max-height: 300px;
+    overflow: auto;
+
+}
