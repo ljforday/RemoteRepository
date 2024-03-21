@@ -1,0 +1,27 @@
+.Bar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 320px;
+    height: 40px;
+    background-color: rgb(28, 153, 101);
+    border-radius: 20px;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    color: #000;
+    font-size: 20px;
+}
+
+.button{
+    border: none;
+    background-color: orange;
+    width: 80px;
+    border-radius: 20px;
+}
