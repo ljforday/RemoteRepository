@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import classes from './Cart.module.css';
 import iconImg from '../../asset/bag.jpg';
 import CartContext from '../../store/cartContext';
@@ -16,7 +16,15 @@ export default function Cart() {
     //02，state ,设置结账页面的 显示与隐藏
 
     const[showCheckOut,setshowCheckOut]= useState(false)
-    
+
+    //useEffect 清除 副作用
+    useEffect(()=>{
+      if (ctx.totalAmount ===0) {
+      setShowDetails(false);
+      setshowCheckOut(false);
+    }
+    },[ctx,setShowDetails,setshowCheckOut])
+
     //03，显示 详情页的函数
 
     const toggleDetailsHand =()=>{
