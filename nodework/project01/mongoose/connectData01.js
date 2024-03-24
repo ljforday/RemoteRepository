@@ -4,15 +4,15 @@ const mongoose=require('mongoose');
 
 //connect mongodb --- 27017 default port number --- test databae name
 mongoose.connect('mongodb://127.0.0.1:27017/test')
-// succesed  or  error
+// succesed  or  error  
 
-mongoose.connection.on('open',()=>{ 
+mongoose.connection.once('open',()=>{ 
     console.log("got it");
  })
-mongoose.connection.on('error',()=>{ 
+mongoose.connection.once('error',()=>{ 
     console.log("error");
  })
-mongoose.connection.on('close',()=>{ 
+mongoose.connection.once('close',()=>{ 
     console.log("close");
  })
 
